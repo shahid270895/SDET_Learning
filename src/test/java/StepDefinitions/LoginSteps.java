@@ -48,7 +48,7 @@ public class LoginSteps {
 	public void user_should_be_logged_in_and_see_the_amazon_dashboard() {
 		WebElement dashboardElement = driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']"));
 		String actualValue = dashboardElement.getText();
-		String expectedValue = "xyz, ";
+		String expectedValue = "Hello, ";
         if(actualValue.contains(expectedValue)) {
         	System.out.println("Pass.");
         	Assert.assertTrue(true);
